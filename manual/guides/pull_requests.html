@@ -49,7 +49,7 @@
                 </button>
                 <a class="logo" href="https://illinois.edu"><img 
                         class="img-responsive pull-left" 
-                        src="https://marketing.illinois.edu/build/images/block-I-primary.png"></a>
+                        src="https://marketing.illinois.edu/images/brand/design/logo/block-i-primary.png"></a>
                 <a class="navbar-brand page-scroll" href="http://arfc.github.io">ARFC</a>
             </div>
 
@@ -86,6 +86,10 @@
     <li><a class="page-scroll nounderline" href="https://pyne.io">pyne</a></li>
     
     <li><a class="page-scroll nounderline" href="https://pyrk.github.io">pyrk</a></li>
+    
+    <li><a class="page-scroll nounderline" href="https://gwenchee.github.io/rollo/">ROLLO</a></li>
+    
+    <li><a class="page-scroll nounderline" href="https://github.com/arfc/saltproc">SaltProc</a></li>
     
     </ul>
     
@@ -178,9 +182,13 @@
         
           <a class="page-link" href="/manual/guides/writing/dissertation">Dissertation</a>
         
+          <a class="page-link" href="/manual/guides/dualboot">Dual Booting Windows and Ubuntu</a>
+        
           <a class="page-link" href="/manual/expectations">Expectations</a>
         
           
+        
+          <a class="page-link" href="/manual/guides/getting_serpent_license">Acquiring a Serpent License</a>
         
           <a class="page-link" href="/manual/guides/git-lfs">Git Large File Storage</a>
         
@@ -230,6 +238,8 @@
         
           <a class="page-link" href="/manual/guides/pyne">PyNE</a>
         
+          <a class="page-link" href="/software/moltres/wiki/recommended_settings/">Recommended Executioner and Preconditioning Settings</a>
+        
           <a class="page-link" href="/manual/guides/katy/recreq">How to ask for a letter of recommendation from Katy</a>
         
           <a class="page-link" href="/manual/guides/writing/report">Report</a>
@@ -241,6 +251,8 @@
           <a class="page-link" href="/manual/guides/katy/revreq">Requesting a Review of Something</a>
         
           <a class="page-link" href="/software/">Software</a>
+        
+          <a class="page-link" href="/manual/guides/software_templates">Software Templates</a>
         
           
         
@@ -312,7 +324,9 @@ two is really necessary for your request)</li>
 consider before approving a pull request. As a reminder, the
 <a href="http://arfc.github.io/manual/coc">ARFC Code of Conduct</a> still applies
 in pull request reviews. Reviews should be both thorough and
-respectful.</p>
+respectful. Comments can be made and changes can be requested for a specific 
+line or lines and the reviewer can even write their own code to improve the 
+committed files using the <code class="language-plaintext highlighter-rouge">+/-</code> button.</p>
 
 <p>If you are about to review a PR, consider copying and pasting
 this checklist into your review comment and checking the boxes
@@ -359,21 +373,31 @@ as you go along.</p>
 
 <h1 id="responding-to-pull-request-reviews">Responding to Pull Request Reviews</h1>
 
-<p>Reviews on pull requests include comments, approvals, and
-suggestions for changes. Comments can include general comments on the
-technical substance, documentation, performance, clarity, reproducibility, 
-coding style, and even the formatting of the submission. Changes can be
-requested for a specific line or lines, where the reviewer can even write
-their own code to improve the committed files. These changes can
-either be discussed in the comment box or committed directly from the
-review with the <code class="highlighter-rouge">commit suggestion</code> button. With this button, the
-suggested changes are committed and pushed immediately
-to the PR branch, which makes
-incorporating suggested changes faster. Do not leave comments un-handled.
-All reviewer comments should be incorporated, responded to, handled, or 
-discussed further. Once the PR has been approved
-by at least one reviewer, a reviewer will merge the changes and the PR will
-be closed.</p>
+<p>GitHub has posted some excellent 
+<a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request">advice on responding to pull request feedback</a>.
+Below are the basic steps.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] Read the review comments.  These can include general comments on the 
+  technical substance, documentation, performance, clarity, reproducibility, 
+  coding style, and even the formatting of the submission.
+<span class="p">-</span> [ ] Some comments contain commit suggestions. These comments can either be 
+  discussed in the comment box or committed directly from the review with the 
+  <span class="sb">`commit suggestion`</span> button. With this button, the suggested changes are 
+  committed and pushed immediately to the PR branch, which makes incorporating 
+  suggested changes faster.
+<span class="p">-</span> [ ] For other comments, discuss the suggestion in the comment box and either 
+  make commits that directly satisfy it or eventually resolve it in some other 
+  way.
+<span class="p">-</span> [ ] As you make commits, push them to your pull request branch.
+<span class="p">-</span> [ ] All reviewer comments should be incorporated, responded to, handled, and/or 
+  discussed further.  Do not leave comments un-handled.
+<span class="p">-</span> [ ] Once you have handled all comments, it's wise to alert the reviewers that 
+  the PR is ready to be re-reviewed. It's best practice to make a comment in 
+  the PR and to re-request a review. To request a fresh review from a reviewer, 
+  in the sidebar of the Conversation tab, click the refresh icon.
+<span class="p">-</span> [ ] Once the PR has been approved by at least one reviewer, a reviewer will 
+  merge the changes and the PR will be closed.
+</code></pre></div></div>
 
                 </div>
                 <div class="col-md-2">
